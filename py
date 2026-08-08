@@ -1,5 +1,6 @@
-weight=41.5
+weight= input(int("Input weight:"))
 print ("weight="+str(weight))
+
 #ground shipping
 if weight <= 2:
   cost=weight1.50+20;
@@ -12,7 +13,7 @@ else:
 print("ground shipping="+str(cost))
 
 #ground shipping premium
-premium_cost = 125.00
+premium_cost = int("Input premium cost (if any):")
 print("ground shipping premium="+str(premium_cost))
 
 #drone shipping
@@ -24,6 +25,7 @@ elif weight >6 and weight <10:
   drone_shipping=weight12.00+0;
 else:
   drone_shipping=weight14.75+0;
+  
 print("drone shipping="+str(drone_shipping))
 print("")
 print("if it is a 4.8 pound package, the cheapest method is ground shipping, costing $34.40")
